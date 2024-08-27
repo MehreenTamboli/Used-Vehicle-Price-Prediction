@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict') }}" method="post">
+            <h2>Predictive Analysis</h2>
+
+            <h3>Brand</h3>
+            <input id="brand" name="Brand" type="text" required="required">
+            
+            <h3>Model</h3>
+            <input id="model" name="Model" type="text" required="required">
+            
+            <h3>Body Type</h3>
+            <input id="body_type" name="Body Type" type="text" required="required">
+            
+            <h3>Drivetrain</h3>
+            <input id="drivetrain" name="Drivetrain" type="text" required="required">
+            
+            <h3>Interior Colour</h3>
+            <input id="interior_colour" name="Interior Colour" type="text" required="required">
+            
+            <h3>Exterior Colour</h3>
+            <input id="exterior_colour" name="Exterior Colour" type="text" required="required">
+            
+            <h3>Fuel Type</h3>
+            <input id="fuel_type" name="Fuel Type" type="text" required="required">
+            
+            <h3>Transmission Type</h3>
+            <input id="transmission_type" name="Transmission Type" type="text" required="required">
+            
+            <h3>Number of Doors</h3>
+            <input id="doors" name="Doors" type="number" required="required">
+
+            <h3>Cylinder Count</h3>
+            <input id="cylinder" name="Cylinder Count" type="number" required="required">
+
+            <h3>Distance (km)</h3>
+            <input id="distance" name="Distance (km)" type="number" required="required">
+
+            <h3>Mileage (kms/Lt)</h3>
+            <input id="mileage" name="Mileage (kms/Lt)" type="number" required="required">
+
+            <h3>Years Used</h3>
+            <input id="years_used" name="Years Used" type="number" required="required">
+
+            <br><br>
+            <button id="sub" type="submit">Calculate the Selling Price</button>
+            <br>
+
+        </form>
+
+        <br><br>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+
+        #brand, #model, #body_type, #drivetrain, #interior_colour, #exterior_colour, #fuel_type, #transmission_type,
+        #doors, #cylinder, #distance, #mileage, #years_used {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #sub {
+            width: 200px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            background-color: lightcoral;
+            border: none;
+            color: white;
+        }
+
+        #sub:hover {
+            background-color: darkcyan;
+        }
+    </style>
+
+</body>
+
+</html>
