@@ -8,12 +8,12 @@ In this project, I have very closely implemented all the steps of a Data Science
 ## i.	Data Collection: Dummy data on Used Vehicle Price Prediction from Kaggle.
 
 ## ii.	Performed Data Pre-processing techniques:
-	Removed Duplicate records
-	Performed Feature Engineering Techniques: Aggregation by combing multiple features into a single one, Deriving new features from existing ones & Bucketing by grouping numeric values into discreet bins
-	Dropped columns that had the most % of missing values
-	Dropped records from the columns that had missing values more than 35%
-	Label Encoded multi-class columns using Label Encoder
-	Imputed the rest of the missing values by using the KNN Imputer
+### a. Removed Duplicate records
+### b. Performed Feature Engineering Techniques: Aggregation by combing multiple features into a single one, Deriving new features from existing ones & Bucketing by grouping numeric values into discreet bins
+### c. Dropped columns that had the most % of missing values
+### d. Dropped records from the columns that had missing values more than 35%
+### e. Label Encoded multi-class columns using Label Encoder
+### f. Imputed the rest of the missing values by using the KNN Imputer
 
 ## iii.	Performed EDA:
 a.	Data Summarization: To understand the data type of each column, unique values in each column, etc.
